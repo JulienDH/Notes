@@ -1,14 +1,14 @@
 ## Some VBA tips
 
-### How to do a FOR loop
-```text
-Sheets("Sheet1").Select
-ActiveSheet.UsedRange.Select
+### How to do a FOR looptext
 
-For Line = 2 To Selection.Rows.Count
-    'Actions
-next line
-```
+    Sheets("Sheet1").Select
+    ActiveSheet.UsedRange.Select
+
+    For Line = 2 To Selection.Rows.Count
+        'Actions
+    next line
+
 ### Remove Spaces
 ```text
 Dim monText as String
