@@ -1,0 +1,59 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#welcome-to-mkdocs", 
+            "text": "For full documentation visit  mkdocs.org .", 
+            "title": "Welcome to MkDocs"
+        }, 
+        {
+            "location": "/#commands", 
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "Commands"
+        }, 
+        {
+            "location": "/#project-layout", 
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Project layout"
+        }, 
+        {
+            "location": "/GIT_General/", 
+            "text": "Git basic commands\n\n\nHow to add a new mkdocs note in your GitHub repository\n\n\nFrom your docs folder, type:\n\n\nvi example.md\ngit add example.md\ngit commit -m \nmy example note on GitHub\n\ngit push\ncd ..\nmkdocs gh-deploy\n\n\n\n\nPlease find \nhere\n the specific markdown syntax for GitHub.\n\n\nMore information about mkdocs are available \nhere\n.", 
+            "title": "GIT General"
+        }, 
+        {
+            "location": "/GIT_General/#git-basic-commands", 
+            "text": "", 
+            "title": "Git basic commands"
+        }, 
+        {
+            "location": "/GIT_General/#how-to-add-a-new-mkdocs-note-in-your-github-repository", 
+            "text": "From your docs folder, type:  vi example.md\ngit add example.md\ngit commit -m  my example note on GitHub \ngit push\ncd ..\nmkdocs gh-deploy  Please find  here  the specific markdown syntax for GitHub.  More information about mkdocs are available  here .", 
+            "title": "How to add a new mkdocs note in your GitHub repository"
+        }, 
+        {
+            "location": "/JS_Array/", 
+            "text": "How to handle Arrays in JavaScript\n\n\nCreate an Array\n\n\nvar points = [40, 100, 1, 5, 25, 10];\n\n\n\n\nor\n\n\nvar points = [\n  40,\n  100,\n  1,\n  5,\n  25,\n  10\n];\n\n\n\n\nor\n\n\nvar points = new Array(0, 100, 1, 5, 25, 10);\n\n\n\n\nSort an Array\n\n\npoints.sort(function(a, b){return b-a});    \n// Sort the numbers in the array in descending order\n// The first item in the array (points[0]) is now the highest value\n\npoints.sort(function(a, b){return a-b});    \n// Sort the numbers in the array in acending order\n// The first item in the array (points[0]) is now the lowest value", 
+            "title": "JS Array"
+        }, 
+        {
+            "location": "/JS_Array/#how-to-handle-arrays-in-javascript", 
+            "text": "", 
+            "title": "How to handle Arrays in JavaScript"
+        }, 
+        {
+            "location": "/JS_Array/#create-an-array", 
+            "text": "var points = [40, 100, 1, 5, 25, 10];  or  var points = [\n  40,\n  100,\n  1,\n  5,\n  25,\n  10\n];  or  var points = new Array(0, 100, 1, 5, 25, 10);", 
+            "title": "Create an Array"
+        }, 
+        {
+            "location": "/JS_Array/#sort-an-array", 
+            "text": "points.sort(function(a, b){return b-a});    \n// Sort the numbers in the array in descending order\n// The first item in the array (points[0]) is now the highest value\n\npoints.sort(function(a, b){return a-b});    \n// Sort the numbers in the array in acending order\n// The first item in the array (points[0]) is now the lowest value", 
+            "title": "Sort an Array"
+        }
+    ]
+}

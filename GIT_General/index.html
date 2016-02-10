@@ -8,30 +8,30 @@
   
   
   
-  <title>Notes</title>
+  <title>GIT General - Notes</title>
   
 
-  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="shortcut icon" href="../img/favicon.ico">
 
   
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="./css/highlight.css">
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
 
   
   <script>
     // Current page data
-    var mkdocs_page_name = "None";
-    var mkdocs_page_input_path = "index.md";
-    var mkdocs_page_url = "/";
+    var mkdocs_page_name = "GIT General";
+    var mkdocs_page_input_path = "GIT_General.md";
+    var mkdocs_page_url = "/GIT_General/";
   </script>
   
-  <script src="./js/jquery-2.1.1.min.js"></script>
-  <script src="./js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="./js/highlight.pack.js"></script>
-  <script src="./js/theme.js"></script> 
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
 
   
 </head>
@@ -43,9 +43,9 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Notes</a>
+        <a href=".." class="icon icon-home"> Notes</a>
         <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
   </form>
 </div>
@@ -55,16 +55,21 @@
         <ul class="current">
           
             <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
     <li class="toctree-l1 current">
-        <a class="current" href=".">Home</a>
+        <a class="current" href="./">GIT General</a>
         
             <ul>
             
-                <li class="toctree-l3"><a href="#welcome-to-mkdocs">Welcome to MkDocs</a></li>
+                <li class="toctree-l3"><a href="#git-basic-commands">Git basic commands</a></li>
                 
-                    <li><a class="toctree-l4" href="#commands">Commands</a></li>
-                
-                    <li><a class="toctree-l4" href="#project-layout">Project layout</a></li>
+                    <li><a class="toctree-l4" href="#how-to-add-a-new-mkdocs-note-in-your-github-repository">How to add a new mkdocs note in your GitHub repository</a></li>
                 
             
             </ul>
@@ -74,14 +79,7 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="GIT_General/">GIT General</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="JS_Array/">JS Array</a>
+        <a class="" href="../JS_Array/">JS Array</a>
         
     </li>
 <li>
@@ -96,7 +94,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Notes</a>
+        <a href="..">Notes</a>
       </nav>
 
       
@@ -104,11 +102,11 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".">Docs</a> &raquo;</li>
+    <li><a href="..">Docs</a> &raquo;</li>
     
       
     
-    <li>Home</li>
+    <li>GIT General</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -118,21 +116,19 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="http://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+                <h2 id="git-basic-commands">Git basic commands</h2>
+<h3 id="how-to-add-a-new-mkdocs-note-in-your-github-repository">How to add a new mkdocs note in your GitHub repository</h3>
+<p>From your docs folder, type:</p>
+<pre><code class="bash">vi example.md
+git add example.md
+git commit -m &quot;my example note on GitHub&quot;
+git push
+cd ..
+mkdocs gh-deploy
 </code></pre>
+
+<p>Please find <a href="https://guides.github.com/features/mastering-markdown/">here</a> the specific markdown syntax for GitHub.</p>
+<p>More information about mkdocs are available <a href="http://www.mkdocs.org">here</a>.</p>
               
             </div>
           </div>
@@ -140,8 +136,10 @@ docs/
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="GIT_General/" class="btn btn-neutral float-right" title="GIT General">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../JS_Array/" class="btn btn-neutral float-right" title="JS Array">Next <span class="icon icon-circle-arrow-right"></span></a>
       
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -167,16 +165,13 @@ docs/
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-        <span style="margin-left: 15px"><a href="GIT_General/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+        <span style="margin-left: 15px"><a href="../JS_Array/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
 
 </body>
 </html>
-
-<!--
-MkDocs version : 0.15.2
-Build Date UTC : 2016-02-10 16:11:50.683947
--->
