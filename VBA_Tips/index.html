@@ -160,10 +160,10 @@
               
                 <h2 id="some-vba-tips">Some VBA tips</h2>
 <h3 id="how-to-do-a-for-looptext">How to do a FOR looptext</h3>
-<pre><code class="vba">Sheets(&quot;Sheet1&quot;).Select
+<pre><code class="vb">Sheets(&quot;Sheet1&quot;).Select
 ActiveSheet.UsedRange.Select
 For Line = 2 To Selection.Rows.Count
-    //Actions
+    'Actions
 next line
 </code></pre>
 
@@ -176,66 +176,66 @@ monText = RTrim(monText) 'Remove space on the right*
 
 <p>More information about the Trim method <a href="https://msdn.microsoft.com/en-us/library/h9wz3dez">here</a>.</p>
 <h3 id="convert-a-column-number-to-a-column-letter">Convert a column number to a column letter</h3>
-<pre><code class="vba">ColumnLetter = Chr(ColumnNbr + 64)
+<pre><code class="vb">ColumnLetter = Chr(ColumnNbr + 64)
 </code></pre>
 
 <h3 id="erase-all-information-in-the-sheet1">Erase all information in the Sheet1</h3>
-<pre><code class="vba">Sheets(“Sheet1”).Cells.ClearContents
+<pre><code class="vb">Sheets(“Sheet1”).Cells.ClearContents
 </code></pre>
 
 <h3 id="number-of-the-last-non-blank-line-in-the-column-a">Number of the last non-blank line in the column A</h3>
-<pre><code class="vba">LastLine = Range(&quot;A&quot; &amp; Rows.Count).End(xlUp).Row
+<pre><code class="vb">LastLine = Range(&quot;A&quot; &amp; Rows.Count).End(xlUp).Row
 </code></pre>
 
 <h3 id="select-the-first-empty-cell-in-the-column-a">Select the first empty cell in the column A</h3>
-<pre><code class="vba">Range(&quot;A&quot; &amp; Rows.Count).End(xlUp).Offset(1).Select
+<pre><code class="vb">Range(&quot;A&quot; &amp; Rows.Count).End(xlUp).Offset(1).Select
 </code></pre>
 
 <h3 id="number-of-the-last-non-blank-column-in-the-first-row">Number of the last non-blank column in the first row</h3>
-<pre><code class="vba">LastColumn = Cells(1, Columns.Count).End(xlToLeft).Column
+<pre><code class="vb">LastColumn = Cells(1, Columns.Count).End(xlToLeft).Column
 </code></pre>
 
 <h3 id="select-the-first-empty-cell-in-the-row-1">Select the first empty cell in the row 1</h3>
-<pre><code class="vba">Cells(1, Columns.Count).End(xlToLeft).Offset(, 1).Select
+<pre><code class="vb">Cells(1, Columns.Count).End(xlToLeft).Offset(, 1).Select
 </code></pre>
 
 <h3 id="count-the-number-of-character-in-a-string-variable">Count the number of character in a string variable</h3>
-<pre><code class="vba">Temp = Len(&quot;licensing&quot;) //Temp will be equal to 9
+<pre><code class="vb">Temp = Len(&quot;licensing&quot;) //Temp will be equal to 9
 </code></pre>
 
 <h3 id="provide-the-first-characters-on-the-left">Provide the first characters on the left</h3>
-<pre><code class="vba">Temp = Left(&quot;licensing&quot;, 3) //Temp will be equal to “lic”
-Temp = Left(&quot;licensing&quot;, 5) //Temp will be equal to “licen”
+<pre><code class="vb">Temp = Left(&quot;licensing&quot;, 3) 'Temp will be equal to “lic”
+Temp = Left(&quot;licensing&quot;, 5) 'Temp will be equal to “licen”
 </code></pre>
 
 <h3 id="provide-the-first-characters-in-the-right">Provide the first characters in the right</h3>
-<pre><code class="vba">Temp = Right(&quot;licensing&quot;, 4) //Temp will be equal to “sing”
-Temp = Right(&quot;licensing&quot;, 6) //Temp will be equal to “ensing”
+<pre><code class="vb">Temp = Right(&quot;licensing&quot;, 4) 'Temp will be equal to “sing”
+Temp = Right(&quot;licensing&quot;, 6) 'Temp will be equal to “ensing”
 </code></pre>
 
 <h3 id="provide-the-characters-at-the-indicated-position">Provide the characters at the indicated position</h3>
-<pre><code class="vba">Temp = Mid(&quot;France&quot;, 2, 3) //Temp will be equal to “anc”
-//The 3rd parameter: the start position
-//The 4th parameter: the number of character has to be saved
+<pre><code class="vb">Temp = Mid(&quot;France&quot;, 2, 3) 'Temp will be equal to “anc”
+'The 3rd parameter: the start position
+'The 4th parameter: the number of character has to be saved
 </code></pre>
 
 <h3 id="provide-the-number-of-time-a-character-appears">Provide the number of time a character appears</h3>
-<pre><code class="vba">Temp = InStr(&quot;princing&quot;, &quot;i&quot;)  //temp will be equal to 3
+<pre><code class="vb">Temp = InStr(&quot;princing&quot;, &quot;i&quot;)  'Temp will be equal to 3
 </code></pre>
 
 <h3 id="change-the-interior-color-of-a-cell">Change the interior color of a cell</h3>
-<pre><code class="vba">Cells(line, column).Interior.ColorIndex = 3
+<pre><code class="vb">Cells(line, column).Interior.ColorIndex = 3
 </code></pre>
 
 <p>The other color index is available <a href="https://msdn.microsoft.com/en-us/library/office/ff840443.aspx">here</a>.</p>
 <h3 id="count-the-number-of-merged-cells">Count the number of merged cells</h3>
-<pre><code class="vba">If Cells(line, column).MergeCells then
+<pre><code class="vb">If Cells(line, column).MergeCells then
   mergedCells = Cells(line, column).MergeArea.Cells.Count
 end if
 </code></pre>
 
 <h3 id="column-identifier">Column identifier</h3>
-<pre><code class="vba">ActiveSheet.UsedRange.Select
+<pre><code class="vb">ActiveSheet.UsedRange.Select
 lastColumn = Cells(1, Columns.Count).End(xlToLeft).Column
 
 For Column = 1 To lastColumn
@@ -246,7 +246,7 @@ Next Column
 
 <h3 id="replace-characters">Replace characters</h3>
 <p>This function is able to return the formatted string by removing gaps and special characters.</p>
-<pre><code class="vba">Function format_String(temp As String)
+<pre><code class="vb">Function format_String(temp As String)
     temp = Replace(temp, &quot;-&quot;, &quot;&quot;)
     temp = Replace(temp, &quot;_&quot;, &quot;&quot;)
     temp = Replace(temp, &quot; &quot;, &quot;&quot;)
