@@ -259,11 +259,12 @@ End Function
 <p>More information about the Replace method <a href="https://msdn.microsoft.com/en-us/library/bt3szac5">here</a></p>
 <h3 id="how-to-find-something">How to find something</h3>
 <p>Find the first result (Find Method)</p>
-<pre><code class="vba">Dim itemToFind as string
+<pre><code class="vb">Dim itemToFind as string
 itemToFind = &quot;3BK36100AC&quot;
 set GlobalResult = Worksheets(&quot;sheet1&quot;).Columns(1).Find(itemToFind, LookIn:=xlValues, LookAt:=xlPart)
 If Not GlobalResult Is Nothing Then //if the Find method finds something, do something
-    //Actions
+//Actions
+
 end if
 If GlobalResult Is Nothing Then //if the Find method finds nothing, do something
     //Actions
