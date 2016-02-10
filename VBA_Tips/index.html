@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>VBA Tips - Notes</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "VBA Tips";
+    var mkdocs_page_input_path = "VBA_Tips.md";
+    var mkdocs_page_url = "/VBA_Tips/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Notes</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../GIT_General/">GIT General</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../JS_Array/">JS Array</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">VBA Tips</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#some-vba-tips">Some VBA tips</a></li>
+                
+                    <li><a class="toctree-l4" href="#remove-spaces">Remove Spaces</a></li>
+                
+                    <li><a class="toctree-l4" href="#convert-a-column-number-to-a-column-letter">Convert a column number to a column letter</a></li>
+                
+                    <li><a class="toctree-l4" href="#erase-all-information-in-the-sheet1">Erase all information in the Sheet1</a></li>
+                
+                    <li><a class="toctree-l4" href="#number-of-the-last-non-blank-line-in-the-column-a">Number of the last non-blank line in the column A</a></li>
+                
+                    <li><a class="toctree-l4" href="#select-the-first-empty-cell-in-the-column-a">Select the first empty cell in the column A</a></li>
+                
+                    <li><a class="toctree-l4" href="#number-of-the-last-non-blank-column-in-the-first-row">Number of the last non-blank column in the first row</a></li>
+                
+                    <li><a class="toctree-l4" href="#select-the-first-empty-cell-in-the-row-1">Select the first empty cell in the row 1</a></li>
+                
+                    <li><a class="toctree-l4" href="#count-the-number-of-character-in-a-string-variable">Count the number of character in a string variable</a></li>
+                
+                    <li><a class="toctree-l4" href="#provide-the-first-characters-on-the-left">Provide the first characters on the left</a></li>
+                
+                    <li><a class="toctree-l4" href="#provide-the-first-characters-in-the-right">Provide the first characters in the right</a></li>
+                
+                    <li><a class="toctree-l4" href="#provide-the-characters-at-the-indicated-position">Provide the characters at the indicated position</a></li>
+                
+                    <li><a class="toctree-l4" href="#provide-the-number-of-time-a-character-appears">Provide the number of time a character appears</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-the-interior-color-of-a-cell">Change the interior color of a cell</a></li>
+                
+                    <li><a class="toctree-l4" href="#count-the-number-of-merged-cells">Count the number of merged cells</a></li>
+                
+                    <li><a class="toctree-l4" href="#column-identifier">Column identifier</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Notes</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>VBA Tips</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="some-vba-tips">Some VBA tips</h2>
+<h3 id="remove-spaces">Remove Spaces</h3>
+<pre><code class="VBA">Dim monText as String
+monText = Trim(monText) 'remove space on the left and right
+monText = LTrim(monText) 'remove space on the left
+monText = RTrim(monText) 'remove space on the right
+</code></pre>
+
+<p>More information about the Trim method [here](https://msdn.microsoft.com/en-us/library/h9wz3dez(v=vs.90).</p>
+<h3 id="convert-a-column-number-to-a-column-letter">Convert a column number to a column letter</h3>
+<pre><code class="VBA">ColumnLetter = Chr(ColumnNbr + 64)
+</code></pre>
+
+<h3 id="erase-all-information-in-the-sheet1">Erase all information in the Sheet1</h3>
+<pre><code class="VBA">Sheets(“Sheet1”).Cells.ClearContents
+</code></pre>
+
+<h3 id="number-of-the-last-non-blank-line-in-the-column-a">Number of the last non-blank line in the column A</h3>
+<pre><code class="VBA">LastLine = Range(&quot;A&quot; &amp; Rows.Count).End(xlUp).Row
+</code></pre>
+
+<h3 id="select-the-first-empty-cell-in-the-column-a">Select the first empty cell in the column A</h3>
+<pre><code class="VBA">Range(&quot;A&quot; &amp; Rows.Count).End(xlUp).Offset(1).Select
+</code></pre>
+
+<h3 id="number-of-the-last-non-blank-column-in-the-first-row">Number of the last non-blank column in the first row</h3>
+<pre><code class="VBA">LastColumn = Cells(1, Columns.Count).End(xlToLeft).Column
+</code></pre>
+
+<h3 id="select-the-first-empty-cell-in-the-row-1">Select the first empty cell in the row 1</h3>
+<pre><code class="VBA">Cells(1, Columns.Count).End(xlToLeft).Offset(, 1).Select
+</code></pre>
+
+<h3 id="count-the-number-of-character-in-a-string-variable">Count the number of character in a string variable</h3>
+<pre><code class="VBA">Temp = Len(&quot;licensing&quot;) ‘Temp will be equal to 9
+</code></pre>
+
+<h3 id="provide-the-first-characters-on-the-left">Provide the first characters on the left</h3>
+<pre><code class="VBA">Temp = Left(&quot;licensing&quot;, 3) ’Temp will be equal to “lic”
+Temp = Left(&quot;licensing&quot;, 5) ’Temp will be equal to “licen”
+</code></pre>
+
+<h3 id="provide-the-first-characters-in-the-right">Provide the first characters in the right</h3>
+<pre><code class="VBA">Temp = Right(&quot;licensing&quot;, 4) ’Temp will be equal to “sing”
+Temp = Right(&quot;licensing&quot;, 6) ’Temp will be equal to “ensing”
+</code></pre>
+
+<h3 id="provide-the-characters-at-the-indicated-position">Provide the characters at the indicated position</h3>
+<pre><code class="VBA">Temp = Mid(&quot;France&quot;, 2, 3) ’Temp will be equal to “anc”
+‘the first number is the start position
+‘the second number is the number of character need to be save
+</code></pre>
+
+<h3 id="provide-the-number-of-time-a-character-appears">Provide the number of time a character appears</h3>
+<pre><code class="VBA">Temp = InStr(&quot;princing&quot;, &quot;i&quot;)  ‘temp will be equal to 3
+</code></pre>
+
+<h3 id="change-the-interior-color-of-a-cell">Change the interior color of a cell</h3>
+<pre><code class="VBA">Cells(line, column).Interior.ColorIndex = 3
+</code></pre>
+
+<p>The other color index is available <a href="https://msdn.microsoft.com/en-us/library/office/ff840443.aspx">here</a>.</p>
+<h3 id="count-the-number-of-merged-cells">Count the number of merged cells</h3>
+<pre><code class="VBA">if Cells(line, column).MergeCells then
+    mergedCells = Cells(line, column).MergeArea.Cells.Count
+end if
+</code></pre>
+
+<h3 id="column-identifier">Column identifier</h3>
+<pre><code class="VBA">ActiveSheet.UsedRange.Select
+lastColumn = Cells(1, Columns.Count).End(xlToLeft).Column
+
+For Column = 1 To lastColumn
+  If Selection.Cells(1, Column).Value = Title1Name Then Title1ColumnNbr = Column
+  If Selection.Cells(1, Column).Value = Title2Name Then Title2ColumnNbr = Column
+Next Column
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../JS_Array/" class="btn btn-neutral" title="JS Array"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../JS_Array/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+
+</body>
+</html>
