@@ -84,7 +84,7 @@
             
                 <li class="toctree-l3"><a href="#some-vba-tips">Some VBA tips</a></li>
                 
-                    <li><a class="toctree-l4" href="#how-to-do-a-for-loop">How to do a FOR loop</a></li>
+                    <li><a class="toctree-l4" href="#how-to-do-a-for-looptext">How to do a FOR looptext</a></li>
                 
                     <li><a class="toctree-l4" href="#remove-spaces">Remove Spaces</a></li>
                 
@@ -117,6 +117,8 @@
                     <li><a class="toctree-l4" href="#column-identifier">Column identifier</a></li>
                 
                     <li><a class="toctree-l4" href="#replace-characters">Replace characters</a></li>
+                
+                    <li><a class="toctree-l4" href="#how-to-find-something">How to find something</a></li>
                 
             
             </ul>
@@ -157,29 +159,30 @@
             <div class="section">
               
                 <h2 id="some-vba-tips">Some VBA tips</h2>
-<h3 id="how-to-do-a-for-loop">How to do a FOR loop</h3>
-<pre><code class="VBA">Sheets(&quot;Sheet1&quot;).Select
+<h3 id="how-to-do-a-for-looptext">How to do a FOR looptext</h3>
+<pre><code>Sheets("Sheet1").Select
 ActiveSheet.UsedRange.Select
 
 For Line = 2 To Selection.Rows.Count
     'Actions
 next line
 </code></pre>
-
 <h3 id="remove-spaces">Remove Spaces</h3>
-<pre><code class="VBA">Dim monText as String
-monText = Trim(monText) 'remove space on the left and right
-monText = LTrim(monText) 'remove space on the left
-monText = RTrim(monText) 'remove space on the right
+<pre><code>Dim monText as String
+monText = Trim(monText)
+    //Remove space on the left and right
+monText = LTrim(monText)
+    *Remove space on the left*
+monText = RTrim(monText)
+    **Remove space on the right**
 </code></pre>
-
 <p>More information about the Trim method <a href="https://msdn.microsoft.com/en-us/library/h9wz3dez">here</a>.</p>
 <h3 id="convert-a-column-number-to-a-column-letter">Convert a column number to a column letter</h3>
-<pre><code class="VBA">ColumnLetter = Chr(ColumnNbr + 64)
+<pre><code class="text">ColumnLetter = Chr(ColumnNbr + 64)
 </code></pre>
 
 <h3 id="erase-all-information-in-the-sheet1">Erase all information in the Sheet1</h3>
-<pre><code class="VBA">Sheets(“Sheet1”).Cells.ClearContents
+<pre><code class="text">Sheets(“Sheet1”).Cells.ClearContents
 </code></pre>
 
 <h3 id="number-of-the-last-non-blank-line-in-the-column-a">Number of the last non-blank line in the column A</h3>
@@ -199,27 +202,27 @@ monText = RTrim(monText) 'remove space on the right
 </code></pre>
 
 <h3 id="count-the-number-of-character-in-a-string-variable">Count the number of character in a string variable</h3>
-<pre><code class="VBA">Temp = Len(&quot;licensing&quot;) ‘Temp will be equal to 9
+<pre><code class="VBA">Temp = Len(&quot;licensing&quot;) 'Temp will be equal to 9
 </code></pre>
 
 <h3 id="provide-the-first-characters-on-the-left">Provide the first characters on the left</h3>
-<pre><code class="VBA">Temp = Left(&quot;licensing&quot;, 3) ’Temp will be equal to “lic”
-Temp = Left(&quot;licensing&quot;, 5) ’Temp will be equal to “licen”
+<pre><code class="VBScript">Temp = Left(&quot;licensing&quot;, 3) 'Temp will be equal to “lic”
+Temp = Left(&quot;licensing&quot;, 5) 'Temp will be equal to “licen”
 </code></pre>
 
 <h3 id="provide-the-first-characters-in-the-right">Provide the first characters in the right</h3>
-<pre><code class="VBA">Temp = Right(&quot;licensing&quot;, 4) ’Temp will be equal to “sing”
-Temp = Right(&quot;licensing&quot;, 6) ’Temp will be equal to “ensing”
+<pre><code class="VBA">Temp = Right(&quot;licensing&quot;, 4) 'Temp will be equal to “sing”
+Temp = Right(&quot;licensing&quot;, 6) 'Temp will be equal to “ensing”
 </code></pre>
 
 <h3 id="provide-the-characters-at-the-indicated-position">Provide the characters at the indicated position</h3>
-<pre><code class="VBA">Temp = Mid(&quot;France&quot;, 2, 3) ’Temp will be equal to “anc”
-‘the first number is the start position
-‘the second number is the number of character need to be save
+<pre><code class="VBA">Temp = Mid(&quot;France&quot;, 2, 3) 'Temp will be equal to “anc”
+'the first number is the start position
+'the second number is the number of character need to be save
 </code></pre>
 
 <h3 id="provide-the-number-of-time-a-character-appears">Provide the number of time a character appears</h3>
-<pre><code class="VBA">Temp = InStr(&quot;princing&quot;, &quot;i&quot;)  ‘temp will be equal to 3
+<pre><code class="VBA">Temp = InStr(&quot;princing&quot;, &quot;i&quot;)  'temp will be equal to 3
 </code></pre>
 
 <h3 id="change-the-interior-color-of-a-cell">Change the interior color of a cell</h3>
@@ -258,6 +261,48 @@ End Function
 </code></pre>
 
 <p>More information about the Replace method <a href="https://msdn.microsoft.com/en-us/library/bt3szac5">here</a></p>
+<h3 id="how-to-find-something">How to find something</h3>
+<p>Find the first result (Find Method)</p>
+<pre><code class="VBA">'Variable declaration
+Dim itemToFind as string
+'I used this varibale to indicate what I'm looking for
+itemToFind = &quot;3BK36100AC&quot;
+    'I use this specific syntax below: Worksheets(&quot;sheet1&quot;) indicate tab name and Columns(1) indicate the column number, never change &quot;LookIn:=xlValues&quot; and LookAt:= can be equal to &quot;xlWhole&quot; if you'r looking for the exact result or LookAt:= can be equal to &quot;xlPart&quot; to find the partial result
+set GlobalResult = Worksheets(&quot;sheet1&quot;).Columns(1).Find(itemToFind, LookIn:=xlValues, LookAt:=xlPart)
+'if the Find method finds something, do something
+If Not GlobalResult Is Nothing Then
+    'ACTIONS
+end if
+'if the Find method finds nothing, do something
+If GlobalResult Is Nothing Then
+    'ACTIONS
+end if
+
+</code></pre>
+
+<p>More information about the Find Method <a href="https://msdn.microsoft.com/en-us/library/office/ff839746.aspx?f=255&amp;mspperror=-2147217396">here</a>.</p>
+<p>Find all other results (FindNext Method)</p>
+<pre><code class="VBA">'Variable declaration
+Dim CustomerToDelete as string
+'I used this variable to indicate what I'm looking for
+CustomerToDelete = &quot;test Org&quot;
+‘I use the Find method, see above the explanations
+set GlobalResult = Worksheets(&quot;sheet1&quot;).Columns(1).Find(customerToDelete, LookIn:=xlValues, LookAt:=xlPart)
+'if the Find method finds something, do something
+If Not GlobalResult Is Nothing Then
+    ‘I record the address of the first item found to avoid infinite loops
+firstAddress = GlobalResult.Address
+‘Do something for each items found
+Do
+        ‘ACTIONS
+        ‘I update the GlobalResult variable with the FindNext method
+Set c = Worksheets(&quot;Sheet1&quot;).Columns(1).FindNext(c)
+‘I continue the search until the variable GlobalResult is empty and the current GlobalResult address is different of the first one
+Loop While Not GlobalResult Is Nothing and GlobalResult.Address &lt;&gt; firstAddress
+End if
+</code></pre>
+
+<p>More information about the FindNext Method <a href="https://msdn.microsoft.com/en-us/library/office/ff196143.aspx">here</a>.</p>
               
             </div>
           </div>
