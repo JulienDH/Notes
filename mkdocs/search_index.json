@@ -22,7 +22,7 @@
         }, 
         {
             "location": "/GIT_General/", 
-            "text": "Git basic commands\n\n\nHow to add a new mkdocs note in your GitHub repository\n\n\nFrom your docs folder, type:\n\n\nvi example.md\ngit add example.md\ngit commit -m \nmy example note on GitHub\n\ngit push\ncd ..\nmkdocs gh-deploy\n\n\n\n\nPlease find \nhere\n the specific markdown syntax for GitHub.\n\n\nMore information about mkdocs are available \nhere\n.", 
+            "text": "Git basic commands\n\n\nHow to add a new mkdocs note in your GitHub repository\n\n\nFrom your docs folder, type:\n\n\nvi example.md\ngit add example.md\ngit commit -m \nmy example note on GitHub\n\ngit push\ncd ..\nmkdocs gh-deploy\n\n\n\n\nPlease find \nhere\n the specific markdown syntax for GitHub.\n\n\nMore information about mkdocs are available:\n\n\n\n\nOfficial Website\n\n\nCustomize the color of \ncode blocs\n with some \nCSS", 
             "title": "GIT General"
         }, 
         {
@@ -32,32 +32,122 @@
         }, 
         {
             "location": "/GIT_General/#how-to-add-a-new-mkdocs-note-in-your-github-repository", 
-            "text": "From your docs folder, type:  vi example.md\ngit add example.md\ngit commit -m  my example note on GitHub \ngit push\ncd ..\nmkdocs gh-deploy  Please find  here  the specific markdown syntax for GitHub.  More information about mkdocs are available  here .", 
+            "text": "From your docs folder, type:  vi example.md\ngit add example.md\ngit commit -m  my example note on GitHub \ngit push\ncd ..\nmkdocs gh-deploy  Please find  here  the specific markdown syntax for GitHub.  More information about mkdocs are available:   Official Website  Customize the color of  code blocs  with some  CSS", 
             "title": "How to add a new mkdocs note in your GitHub repository"
         }, 
         {
-            "location": "/JS_Array/", 
-            "text": "How to handle Arrays in JavaScript\n\n\nCreate an Array\n\n\nvar points = [40, 100, 1, 5, 25, 10];\n\n\n\n\nor\n\n\nvar points = [\n  40,\n  100,\n  1,\n  5,\n  25,\n  10\n];\n\n\n\n\nor\n\n\nvar points = new Array(0, 100, 1, 5, 25, 10);\n\n\n\n\nSort an Array\n\n\npoints.sort(function(a, b){return b-a});    \n// Sort the numbers in the array in descending order\n// The first item in the array (points[0]) is now the highest value\n\npoints.sort(function(a, b){return a-b});    \n// Sort the numbers in the array in acending order\n// The first item in the array (points[0]) is now the lowest value", 
-            "title": "JS Array"
+            "location": "/JS_Introduction/", 
+            "text": "Some useful links\n\n\n\n\nThe Difference Between Javascript Primitive Data Types and Objects\n\n\n\n\nBasic variable declarations\n\n\nConst\n\n\nThe \nconst\n declaration creates a read-only reference to a value. A const variable identifier cannot be reassigned.\n\n\nLet\n\n\nThe function \nlet\n allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used.\nThis is unlike the \nvar\n keyword, which defines a variable globally or locally to an entire function regardless of block scope.\n\n\nHow to handle Arrays in JavaScript\n\n\nCreate an Array\n\n\nvar points = [40, 100, 1, 5, 25, 10];\n\n\n\n\nSort an Array\n\n\npoints.sort(function(a, b){return b-a});    \n// Sort the numbers in the array in descending order\n// The first item in the array (points[0]) is now the highest value\n\npoints.sort(function(a, b){return a-b});    \n// Sort the numbers in the array in acending order\n// The first item in the array (points[0]) is now the lowest value", 
+            "title": "JS Introduction"
         }, 
         {
-            "location": "/JS_Array/#how-to-handle-arrays-in-javascript", 
+            "location": "/JS_Introduction/#some-useful-links", 
+            "text": "The Difference Between Javascript Primitive Data Types and Objects", 
+            "title": "Some useful links"
+        }, 
+        {
+            "location": "/JS_Introduction/#basic-variable-declarations", 
+            "text": "", 
+            "title": "Basic variable declarations"
+        }, 
+        {
+            "location": "/JS_Introduction/#const", 
+            "text": "The  const  declaration creates a read-only reference to a value. A const variable identifier cannot be reassigned.", 
+            "title": "Const"
+        }, 
+        {
+            "location": "/JS_Introduction/#let", 
+            "text": "The function  let  allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used.\nThis is unlike the  var  keyword, which defines a variable globally or locally to an entire function regardless of block scope.", 
+            "title": "Let"
+        }, 
+        {
+            "location": "/JS_Introduction/#how-to-handle-arrays-in-javascript", 
             "text": "", 
             "title": "How to handle Arrays in JavaScript"
         }, 
         {
-            "location": "/JS_Array/#create-an-array", 
-            "text": "var points = [40, 100, 1, 5, 25, 10];  or  var points = [\n  40,\n  100,\n  1,\n  5,\n  25,\n  10\n];  or  var points = new Array(0, 100, 1, 5, 25, 10);", 
+            "location": "/JS_Introduction/#create-an-array", 
+            "text": "var points = [40, 100, 1, 5, 25, 10];", 
             "title": "Create an Array"
         }, 
         {
-            "location": "/JS_Array/#sort-an-array", 
+            "location": "/JS_Introduction/#sort-an-array", 
             "text": "points.sort(function(a, b){return b-a});    \n// Sort the numbers in the array in descending order\n// The first item in the array (points[0]) is now the highest value\n\npoints.sort(function(a, b){return a-b});    \n// Sort the numbers in the array in acending order\n// The first item in the array (points[0]) is now the lowest value", 
             "title": "Sort an Array"
         }, 
         {
+            "location": "/Python_Introduction/", 
+            "text": "Tips\n\n\nGet information about an object\n\n\nprint object.__class__\nprint dir(object)\n\n\n\n\nLists\n\n\ninitialization\n\n\narr = list()\n#or simply\narr = []\n\n\n\n\nappend(x)\n\n\nAdds a single element \u2032x\u2032to the end of a list.\n\n\nextend(L)\n\n\nMerges another list \u2032L\u2032 to the end.\n\n\ninsert(i,x)\n\n\nInserts element \u2032x\u2032 at position \u2032i\u2032.\n\n\nremove(x)\n\n\nRemoves the first occurrence of element \u2032x\u2032.\n\n\npop()\n\n\nRemoves the last element of a list. If an argument is passed, that index item is popped out.\n\n\nindex(x)\n\n\nReturns the first index of a value in the list. Throws an error if it's not found.\n\n\ncount(x)\n\n\nCounts the number of occurrences of an element \u2032x\u2032.\n\n\nsort()\n\n\nSorts the list.\n\n\nreverse()\n\n\nReverses the list.", 
+            "title": "Python Introduction"
+        }, 
+        {
+            "location": "/Python_Introduction/#tips", 
+            "text": "", 
+            "title": "Tips"
+        }, 
+        {
+            "location": "/Python_Introduction/#get-information-about-an-object", 
+            "text": "print object.__class__\nprint dir(object)", 
+            "title": "Get information about an object"
+        }, 
+        {
+            "location": "/Python_Introduction/#lists", 
+            "text": "", 
+            "title": "Lists"
+        }, 
+        {
+            "location": "/Python_Introduction/#initialization", 
+            "text": "arr = list()\n#or simply\narr = []", 
+            "title": "initialization"
+        }, 
+        {
+            "location": "/Python_Introduction/#appendx", 
+            "text": "Adds a single element \u2032x\u2032to the end of a list.", 
+            "title": "append(x)"
+        }, 
+        {
+            "location": "/Python_Introduction/#extendl", 
+            "text": "Merges another list \u2032L\u2032 to the end.", 
+            "title": "extend(L)"
+        }, 
+        {
+            "location": "/Python_Introduction/#insertix", 
+            "text": "Inserts element \u2032x\u2032 at position \u2032i\u2032.", 
+            "title": "insert(i,x)"
+        }, 
+        {
+            "location": "/Python_Introduction/#removex", 
+            "text": "Removes the first occurrence of element \u2032x\u2032.", 
+            "title": "remove(x)"
+        }, 
+        {
+            "location": "/Python_Introduction/#pop", 
+            "text": "Removes the last element of a list. If an argument is passed, that index item is popped out.", 
+            "title": "pop()"
+        }, 
+        {
+            "location": "/Python_Introduction/#indexx", 
+            "text": "Returns the first index of a value in the list. Throws an error if it's not found.", 
+            "title": "index(x)"
+        }, 
+        {
+            "location": "/Python_Introduction/#countx", 
+            "text": "Counts the number of occurrences of an element \u2032x\u2032.", 
+            "title": "count(x)"
+        }, 
+        {
+            "location": "/Python_Introduction/#sort", 
+            "text": "Sorts the list.", 
+            "title": "sort()"
+        }, 
+        {
+            "location": "/Python_Introduction/#reverse", 
+            "text": "Reverses the list.", 
+            "title": "reverse()"
+        }, 
+        {
             "location": "/VBA_Tips/", 
-            "text": "Some VBA tips\n\n\nHow to do a FOR loop\n\n\nSheets(\nSheet1\n).Select\nActiveSheet.UsedRange.Select\n\nFor Line = 2 To Selection.Rows.Count\n    'Actions\nnext line\n\n\n\n\nRemove Spaces\n\n\nDim monText as String\nmonText = Trim(monText) 'remove space on the left and right\nmonText = LTrim(monText) 'remove space on the left\nmonText = RTrim(monText) 'remove space on the right\n\n\n\n\nMore information about the Trim method \nhere\n.\n\n\nConvert a column number to a column letter\n\n\nColumnLetter = Chr(ColumnNbr + 64)\n\n\n\n\nErase all information in the Sheet1\n\n\nSheets(\u201cSheet1\u201d).Cells.ClearContents\n\n\n\n\nNumber of the last non-blank line in the column A\n\n\nLastLine = Range(\nA\n \n Rows.Count).End(xlUp).Row\n\n\n\n\nSelect the first empty cell in the column A\n\n\nRange(\nA\n \n Rows.Count).End(xlUp).Offset(1).Select\n\n\n\n\nNumber of the last non-blank column in the first row\n\n\nLastColumn = Cells(1, Columns.Count).End(xlToLeft).Column\n\n\n\n\nSelect the first empty cell in the row 1\n\n\nCells(1, Columns.Count).End(xlToLeft).Offset(, 1).Select\n\n\n\n\nCount the number of character in a string variable\n\n\nTemp = Len(\nlicensing\n) \u2018Temp will be equal to 9\n\n\n\n\nProvide the first characters on the left\n\n\nTemp = Left(\nlicensing\n, 3) \u2019Temp will be equal to \u201clic\u201d\nTemp = Left(\nlicensing\n, 5) \u2019Temp will be equal to \u201clicen\u201d\n\n\n\n\nProvide the first characters in the right\n\n\nTemp = Right(\nlicensing\n, 4) \u2019Temp will be equal to \u201csing\u201d\nTemp = Right(\nlicensing\n, 6) \u2019Temp will be equal to \u201censing\u201d\n\n\n\n\nProvide the characters at the indicated position\n\n\nTemp = Mid(\nFrance\n, 2, 3) \u2019Temp will be equal to \u201canc\u201d\n\u2018the first number is the start position\n\u2018the second number is the number of character need to be save\n\n\n\n\nProvide the number of time a character appears\n\n\nTemp = InStr(\nprincing\n, \ni\n)  \u2018temp will be equal to 3\n\n\n\n\nChange the interior color of a cell\n\n\nCells(line, column).Interior.ColorIndex = 3\n\n\n\n\nThe other color index is available \nhere\n.\n\n\nCount the number of merged cells\n\n\nif Cells(line, column).MergeCells then\n    mergedCells = Cells(line, column).MergeArea.Cells.Count\nend if\n\n\n\n\nColumn identifier\n\n\nActiveSheet.UsedRange.Select\nlastColumn = Cells(1, Columns.Count).End(xlToLeft).Column\n\nFor Column = 1 To lastColumn\n  If Selection.Cells(1, Column).Value = Title1Name Then Title1ColumnNbr = Column\n  If Selection.Cells(1, Column).Value = Title2Name Then Title2ColumnNbr = Column\nNext Column\n\n\n\n\nReplace characters\n\n\nThis function is able to return the formatted string by removing gaps and special characters.\n\n\nFunction format_String(temp As String)\n    temp = Replace(temp, \n-\n, \n)\n    temp = Replace(temp, \n_\n, \n)\n    temp = Replace(temp, \n \n, \n)\n    temp = Replace(temp, \n.\n, \n)\n    temp = Replace(temp, \n/\n, \n)\n    temp = Replace(temp, \n\\\n, \n)\n    temp = Replace(temp, \nand\n, \n)\n    format_String = temp\nEnd Function\n\n\n\n\nMore information about the Replace method \nhere", 
+            "text": "Some VBA tips\n\n\nHow to do a FOR loop\n\n\nSheets(\nSheet1\n).Select\nActiveSheet.UsedRange.Select\nFor Line = 2 To Selection.Rows.Count\n    'Actions\nnext line\n\n\n\n\nRemove Spaces\n\n\nDim monText as String\nmonText = Trim(monText) 'Remove space on the left and right\nmonText = LTrim(monText) 'Remove space on the left\nmonText = RTrim(monText) 'Remove space on the right\n\n\n\n\nMore information about the Trim method \nhere\n.\n\n\nConvert a column number to a column letter\n\n\nColumnLetter = Chr(ColumnNbr + 64)\n\n\n\n\nErase all information in the Sheet1\n\n\nSheets(\nSheet1\n).Cells.ClearContents\n\n\n\n\nNumber of the last non-blank line in the column A\n\n\nLastLine = Range(\nA\n \n Rows.Count).End(xlUp).Row\n\n\n\n\nSelect the first empty cell in the column A\n\n\nRange(\nA\n \n Rows.Count).End(xlUp).Offset(1).Select\n\n\n\n\nNumber of the last non-blank column in the first row\n\n\nLastColumn = Cells(1, Columns.Count).End(xlToLeft).Column\n\n\n\n\nSelect the first empty cell in the row 1\n\n\nCells(1, Columns.Count).End(xlToLeft).Offset(, 1).Select\n\n\n\n\nCount the number of character in a string variable\n\n\nTemp = Len(\nlicensing\n) 'Temp will be equal to 9\n\n\n\n\nProvide the first characters on the left\n\n\nTemp = Left(\nlicensing\n, 3) 'Temp will be equal to \u201clic\u201d\nTemp = Left(\nlicensing\n, 5) 'Temp will be equal to \u201clicen\u201d\n\n\n\n\nProvide the first characters in the right\n\n\nTemp = Right(\nlicensing\n, 4) 'Temp will be equal to \u201csing\u201d\nTemp = Right(\nlicensing\n, 6) 'Temp will be equal to \u201censing\u201d\n\n\n\n\nProvide the characters at the indicated position\n\n\nTemp = Mid(\nFrance\n, 2, 3) 'Temp will be equal to \u201canc\u201d\n'The 3rd parameter: the start position\n'The 4th parameter: the number of character has to be saved\n\n\n\n\nProvide the number of time a character appears\n\n\nTemp = InStr(\nprincing\n, \ni\n)  'Temp will be equal to 2\n\n\n\n\nChange the interior color of a cell\n\n\nCells(line, column).Interior.ColorIndex = 3\n\n\n\n\nThe other color index is available \nhere\n.\n\n\nCount the number of merged cells\n\n\nIf Cells(line, column).MergeCells then\n  mergedCells = Cells(line, column).MergeArea.Cells.Count\nend if\n\n\n\n\nColumn identifier\n\n\nActiveSheet.UsedRange.Select\nlastColumn = Cells(1, Columns.Count).End(xlToLeft).Column\n\nFor Column = 1 To lastColumn\n  If Selection.Cells(1, Column).Value = Title1Name Then Title1ColumnNbr = Column\n  If Selection.Cells(1, Column).Value = Title2Name Then Title2ColumnNbr = Column\nNext Column\n\n\n\n\nChange case\n\n\nTemp = LCase(Temp) 'Puts everything to lower case.\nTemp = UCase(Temp) 'Puts everything to upper case.\n\n\n\n\nReplace characters\n\n\nThis function is able to return the formatted string by removing gaps and special characters.\n\n\nFunction format_String(temp As String)\n    temp = Replace(temp, \n-\n, \n)\n    temp = Replace(temp, \n_\n, \n)\n    temp = Replace(temp, \n \n, \n)\n    temp = Replace(temp, \n.\n, \n)\n    temp = Replace(temp, \n/\n, \n)\n    temp = Replace(temp, \n\\\n, \n)\n    format_String = temp\nEnd Function\n\n\n\n\nCopy all information from a sheet and past to another one\n\n\nSheets(\nSheet1\n).Select 'Select the source\nActiveSheet.UsedRange.Select\nFor Line = 1 To Selection.Rows.Count\n    Rows(Line).EntireRow.Cut\n    Sheets(\nSheet2\n).Select 'Select the destination\n    lastLine = Range(\nA\n \n Rows.Count).End(xlUp).Row + 1\n    Rows(lastLine).EntireRow.Select: ActiveSheet.Paste\n    Sheets(\nSheet1\n).Select 'Go back to the source\n    Rows(Line).EntireRow.Delete\nnext Line\n\n\n\n\nMore information about the \nReplace\n method \nhere\n\n\nHow to find something\n\n\nFind the first result (Find Method)\n\n\nDim itemToFind as string\nitemToFind = \n3BK36100AC\n\nset GlobalResult = Worksheets(\nsheet1\n).Columns(1).Find(itemToFind, LookIn:=xlValues, LookAt:=xlPart)\nIf Not GlobalResult Is Nothing Then 'if the Find method finds something, do something\n    'Actions\nelse 'if the Find method finds nothing, do something\n    'Actions\nend if\n\n\n\n\nMore information about the \nFind\n method \nhere\n.\n\n\nFind all other results (FindNext Method)\n\n\nDim CustomerToDelete as string\nCustomerToDelete = \ntest Org\n\nset GlobalResult = Worksheets(\nsheet1\n).Columns(1).Find(customerToDelete, LookIn:=xlValues, LookAt:=xlPart)\nIf Not GlobalResult Is Nothing Then 'if the Find method finds something, do something\nfirstAddress = GlobalResult.Address 'Address record of the first item found to avoid infinite loops\nDo\n    'Actions\nSet c = Worksheets(\nSheet1\n).Columns(1).FindNext(c) //Updating the GlobalResult variable with the FindNext method\nLoop While Not GlobalResult Is Nothing and GlobalResult.Address \n firstAddress\nEnd if\n\n\n\n\nMore information about the \nFindNext\n method \nhere\n.\n\n\nUseful links\n\n\n\n\nComparison Operators\n\n\nLanguage Keywords", 
             "title": "VBA Tips"
         }, 
         {
@@ -67,12 +157,12 @@
         }, 
         {
             "location": "/VBA_Tips/#how-to-do-a-for-loop", 
-            "text": "Sheets( Sheet1 ).Select\nActiveSheet.UsedRange.Select\n\nFor Line = 2 To Selection.Rows.Count\n    'Actions\nnext line", 
+            "text": "Sheets( Sheet1 ).Select\nActiveSheet.UsedRange.Select\nFor Line = 2 To Selection.Rows.Count\n    'Actions\nnext line", 
             "title": "How to do a FOR loop"
         }, 
         {
             "location": "/VBA_Tips/#remove-spaces", 
-            "text": "Dim monText as String\nmonText = Trim(monText) 'remove space on the left and right\nmonText = LTrim(monText) 'remove space on the left\nmonText = RTrim(monText) 'remove space on the right  More information about the Trim method  here .", 
+            "text": "Dim monText as String\nmonText = Trim(monText) 'Remove space on the left and right\nmonText = LTrim(monText) 'Remove space on the left\nmonText = RTrim(monText) 'Remove space on the right  More information about the Trim method  here .", 
             "title": "Remove Spaces"
         }, 
         {
@@ -82,7 +172,7 @@
         }, 
         {
             "location": "/VBA_Tips/#erase-all-information-in-the-sheet1", 
-            "text": "Sheets(\u201cSheet1\u201d).Cells.ClearContents", 
+            "text": "Sheets( Sheet1 ).Cells.ClearContents", 
             "title": "Erase all information in the Sheet1"
         }, 
         {
@@ -107,27 +197,27 @@
         }, 
         {
             "location": "/VBA_Tips/#count-the-number-of-character-in-a-string-variable", 
-            "text": "Temp = Len( licensing ) \u2018Temp will be equal to 9", 
+            "text": "Temp = Len( licensing ) 'Temp will be equal to 9", 
             "title": "Count the number of character in a string variable"
         }, 
         {
             "location": "/VBA_Tips/#provide-the-first-characters-on-the-left", 
-            "text": "Temp = Left( licensing , 3) \u2019Temp will be equal to \u201clic\u201d\nTemp = Left( licensing , 5) \u2019Temp will be equal to \u201clicen\u201d", 
+            "text": "Temp = Left( licensing , 3) 'Temp will be equal to \u201clic\u201d\nTemp = Left( licensing , 5) 'Temp will be equal to \u201clicen\u201d", 
             "title": "Provide the first characters on the left"
         }, 
         {
             "location": "/VBA_Tips/#provide-the-first-characters-in-the-right", 
-            "text": "Temp = Right( licensing , 4) \u2019Temp will be equal to \u201csing\u201d\nTemp = Right( licensing , 6) \u2019Temp will be equal to \u201censing\u201d", 
+            "text": "Temp = Right( licensing , 4) 'Temp will be equal to \u201csing\u201d\nTemp = Right( licensing , 6) 'Temp will be equal to \u201censing\u201d", 
             "title": "Provide the first characters in the right"
         }, 
         {
             "location": "/VBA_Tips/#provide-the-characters-at-the-indicated-position", 
-            "text": "Temp = Mid( France , 2, 3) \u2019Temp will be equal to \u201canc\u201d\n\u2018the first number is the start position\n\u2018the second number is the number of character need to be save", 
+            "text": "Temp = Mid( France , 2, 3) 'Temp will be equal to \u201canc\u201d\n'The 3rd parameter: the start position\n'The 4th parameter: the number of character has to be saved", 
             "title": "Provide the characters at the indicated position"
         }, 
         {
             "location": "/VBA_Tips/#provide-the-number-of-time-a-character-appears", 
-            "text": "Temp = InStr( princing ,  i )  \u2018temp will be equal to 3", 
+            "text": "Temp = InStr( princing ,  i )  'Temp will be equal to 2", 
             "title": "Provide the number of time a character appears"
         }, 
         {
@@ -137,7 +227,7 @@
         }, 
         {
             "location": "/VBA_Tips/#count-the-number-of-merged-cells", 
-            "text": "if Cells(line, column).MergeCells then\n    mergedCells = Cells(line, column).MergeArea.Cells.Count\nend if", 
+            "text": "If Cells(line, column).MergeCells then\n  mergedCells = Cells(line, column).MergeArea.Cells.Count\nend if", 
             "title": "Count the number of merged cells"
         }, 
         {
@@ -146,9 +236,29 @@
             "title": "Column identifier"
         }, 
         {
+            "location": "/VBA_Tips/#change-case", 
+            "text": "Temp = LCase(Temp) 'Puts everything to lower case.\nTemp = UCase(Temp) 'Puts everything to upper case.", 
+            "title": "Change case"
+        }, 
+        {
             "location": "/VBA_Tips/#replace-characters", 
-            "text": "This function is able to return the formatted string by removing gaps and special characters.  Function format_String(temp As String)\n    temp = Replace(temp,  - ,  )\n    temp = Replace(temp,  _ ,  )\n    temp = Replace(temp,    ,  )\n    temp = Replace(temp,  . ,  )\n    temp = Replace(temp,  / ,  )\n    temp = Replace(temp,  \\ ,  )\n    temp = Replace(temp,  and ,  )\n    format_String = temp\nEnd Function  More information about the Replace method  here", 
+            "text": "This function is able to return the formatted string by removing gaps and special characters.  Function format_String(temp As String)\n    temp = Replace(temp,  - ,  )\n    temp = Replace(temp,  _ ,  )\n    temp = Replace(temp,    ,  )\n    temp = Replace(temp,  . ,  )\n    temp = Replace(temp,  / ,  )\n    temp = Replace(temp,  \\ ,  )\n    format_String = temp\nEnd Function", 
             "title": "Replace characters"
+        }, 
+        {
+            "location": "/VBA_Tips/#copy-all-information-from-a-sheet-and-past-to-another-one", 
+            "text": "Sheets( Sheet1 ).Select 'Select the source\nActiveSheet.UsedRange.Select\nFor Line = 1 To Selection.Rows.Count\n    Rows(Line).EntireRow.Cut\n    Sheets( Sheet2 ).Select 'Select the destination\n    lastLine = Range( A    Rows.Count).End(xlUp).Row + 1\n    Rows(lastLine).EntireRow.Select: ActiveSheet.Paste\n    Sheets( Sheet1 ).Select 'Go back to the source\n    Rows(Line).EntireRow.Delete\nnext Line  More information about the  Replace  method  here", 
+            "title": "Copy all information from a sheet and past to another one"
+        }, 
+        {
+            "location": "/VBA_Tips/#how-to-find-something", 
+            "text": "Find the first result (Find Method)  Dim itemToFind as string\nitemToFind =  3BK36100AC \nset GlobalResult = Worksheets( sheet1 ).Columns(1).Find(itemToFind, LookIn:=xlValues, LookAt:=xlPart)\nIf Not GlobalResult Is Nothing Then 'if the Find method finds something, do something\n    'Actions\nelse 'if the Find method finds nothing, do something\n    'Actions\nend if  More information about the  Find  method  here .  Find all other results (FindNext Method)  Dim CustomerToDelete as string\nCustomerToDelete =  test Org \nset GlobalResult = Worksheets( sheet1 ).Columns(1).Find(customerToDelete, LookIn:=xlValues, LookAt:=xlPart)\nIf Not GlobalResult Is Nothing Then 'if the Find method finds something, do something\nfirstAddress = GlobalResult.Address 'Address record of the first item found to avoid infinite loops\nDo\n    'Actions\nSet c = Worksheets( Sheet1 ).Columns(1).FindNext(c) //Updating the GlobalResult variable with the FindNext method\nLoop While Not GlobalResult Is Nothing and GlobalResult.Address   firstAddress\nEnd if  More information about the  FindNext  method  here .", 
+            "title": "How to find something"
+        }, 
+        {
+            "location": "/VBA_Tips/#useful-links", 
+            "text": "Comparison Operators  Language Keywords", 
+            "title": "Useful links"
         }
     ]
 }

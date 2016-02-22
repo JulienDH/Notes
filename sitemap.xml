@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-02-10</lastmod>
+     <lastmod>2016-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,15 +12,23 @@
     
     <url>
      <loc>None/GIT_General/</loc>
-     <lastmod>2016-02-10</lastmod>
+     <lastmod>2016-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/JS_Array/</loc>
-     <lastmod>2016-02-10</lastmod>
+     <loc>None/JS_Introduction/</loc>
+     <lastmod>2016-02-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/Python_Introduction/</loc>
+     <lastmod>2016-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -28,7 +36,7 @@
     
     <url>
      <loc>None/VBA_Tips/</loc>
-     <lastmod>2016-02-10</lastmod>
+     <lastmod>2016-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
