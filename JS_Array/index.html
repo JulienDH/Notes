@@ -8,7 +8,7 @@
   
   
   
-  <title>JS Introduction - Notes</title>
+  <title>JS Array - Notes</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -20,14 +20,13 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
   <link href="../extra.css" rel="stylesheet">
-  <link href="../agate.css" rel="stylesheet">
 
   
   <script>
     // Current page data
-    var mkdocs_page_name = "JS Introduction";
-    var mkdocs_page_input_path = "JS_Introduction.md";
-    var mkdocs_page_url = "/JS_Introduction/";
+    var mkdocs_page_name = "JS Array";
+    var mkdocs_page_input_path = "JS_Array.md";
+    var mkdocs_page_url = "/JS_Array/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -72,19 +71,9 @@
           
             <li>
     <li class="toctree-l1 current">
-        <a class="current" href="./">JS Introduction</a>
+        <a class="current" href="./">JS Array</a>
         
             <ul>
-            
-                <li class="toctree-l3"><a href="#some-useful-links">Some useful links</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#basic-variable-declarations">Basic variable declarations</a></li>
-                
-                    <li><a class="toctree-l4" href="#const">Const</a></li>
-                
-                    <li><a class="toctree-l4" href="#let">Let</a></li>
-                
             
                 <li class="toctree-l3"><a href="#how-to-handle-arrays-in-javascript">How to handle Arrays in JavaScript</a></li>
                 
@@ -94,13 +83,6 @@
                 
             
             </ul>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../Python_Introduction/">Python Introduction</a>
         
     </li>
 <li>
@@ -134,7 +116,7 @@
     
       
     
-    <li>JS Introduction</li>
+    <li>JS Array</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -144,19 +126,24 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="some-useful-links">Some useful links</h2>
-<ul>
-<li><a href="http://vicfriedman.github.io/blog/2013/09/15/the-difference-between-javascript-primitive-data-types-and-objects/">The Difference Between Javascript Primitive Data Types and Objects</a></li>
-</ul>
-<h2 id="basic-variable-declarations">Basic variable declarations</h2>
-<h3 id="const">Const</h3>
-<p>The <strong>const</strong> declaration creates a read-only reference to a value. A const variable identifier cannot be reassigned.</p>
-<h3 id="let">Let</h3>
-<p>The function <strong>let</strong> allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used.
-This is unlike the <strong>var</strong> keyword, which defines a variable globally or locally to an entire function regardless of block scope.</p>
-<h2 id="how-to-handle-arrays-in-javascript">How to handle Arrays in JavaScript</h2>
+                <h2 id="how-to-handle-arrays-in-javascript">How to handle Arrays in JavaScript</h2>
 <h3 id="create-an-array">Create an Array</h3>
 <pre><code class="javascript">var points = [40, 100, 1, 5, 25, 10];
+</code></pre>
+
+<p>or</p>
+<pre><code class="javascript">var points = [
+  40,
+  100,
+  1,
+  5,
+  25,
+  10
+];
+</code></pre>
+
+<p>or</p>
+<pre><code class="javascript">var points = new Array(0, 100, 1, 5, 25, 10);
 </code></pre>
 
 <h3 id="sort-an-array">Sort an Array</h3>
@@ -175,7 +162,7 @@ points.sort(function(a, b){return a-b});
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Python_Introduction/" class="btn btn-neutral float-right" title="Python Introduction">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../VBA_Tips/" class="btn btn-neutral float-right" title="VBA Tips">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../GIT_General/" class="btn btn-neutral" title="GIT General"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -207,7 +194,7 @@ points.sort(function(a, b){return a-b});
         <span><a href="../GIT_General/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../Python_Introduction/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../VBA_Tips/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
