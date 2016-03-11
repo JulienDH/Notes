@@ -8,7 +8,7 @@
   
   
   
-  <title>Test note - Notes</title>
+  <title>SQL Introduction - Notes</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -19,13 +19,15 @@
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../extra.css" rel="stylesheet">
+  <link href="../agate.css" rel="stylesheet">
 
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Test note";
-    var mkdocs_page_input_path = "test_note.md";
-    var mkdocs_page_url = "/test_note/";
+    var mkdocs_page_name = "SQL Introduction";
+    var mkdocs_page_input_path = "SQL_Introduction.md";
+    var mkdocs_page_url = "/SQL_Introduction/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -70,18 +72,35 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../JS_Array/">JS Array</a>
+        <a class="" href="../JS_Introduction/">JS Introduction</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Python_Introduction/">Python Introduction</a>
         
     </li>
 <li>
           
             <li>
     <li class="toctree-l1 current">
-        <a class="current" href="./">Test note</a>
+        <a class="current" href="./">SQL Introduction</a>
         
             <ul>
             
+                <li class="toctree-l3"><a href="#sql-select-statement">SQL SELECT Statement</a></li>
+                
+            
             </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../VBA_Tips/">VBA Tips</a>
         
     </li>
 <li>
@@ -108,7 +127,7 @@
     
       
     
-    <li>Test note</li>
+    <li>SQL Introduction</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -118,7 +137,15 @@
           <div role="main">
             <div class="section">
               
-                <pre><code class="bash">mkisofs -o [filename.iso] [path]
+                <h2 id="sql-select-statement">SQL SELECT Statement</h2>
+<p>The SELECT statement is used to select data from a database.
+The result is stored in a result table, called the result-set.</p>
+<pre><code>SELECT column_name,column_name
+FROM table_name;
+</code></pre>
+
+<p>and</p>
+<pre><code>SELECT * FROM table_name;
 </code></pre>
               
             </div>
@@ -127,8 +154,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../VBA_Tips/" class="btn btn-neutral float-right" title="VBA Tips">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="../JS_Array/" class="btn btn-neutral" title="JS Array"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href="../Python_Introduction/" class="btn btn-neutral" title="Python Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -154,8 +183,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../JS_Array/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../Python_Introduction/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../VBA_Tips/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
